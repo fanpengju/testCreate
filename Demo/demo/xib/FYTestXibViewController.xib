@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FYTestXibViewController">
+            <connections>
+                <outlet property="buttonTop" destination="9SL-w0-Tf8" id="KGm-AQ-k1b"/>
+                <outlet property="top" destination="qKX-Wt-78x" id="2T6-tv-pt4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="周杰伦" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suA-DD-eZq">
+                    <rect key="frame" x="61" y="158" width="254" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.87036445256205142" blue="0.30595839540099212" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="HV9-12-wac"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AP-uz-i5h">
+                    <rect key="frame" x="100" y="120" width="175" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.26126339855200453" blue="0.49318815753998957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="wFL-z0-hHv"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="click:" destination="-1" eventType="touchUpInside" id="6h5-3G-nuc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0AP-uz-i5h" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="100" id="9SL-w0-Tf8"/>
+                <constraint firstItem="suA-DD-eZq" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="61" id="KWO-si-AIR"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="0AP-uz-i5h" secondAttribute="trailing" constant="100" id="NMe-Ig-1dW"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="suA-DD-eZq" secondAttribute="trailing" constant="60" id="qJp-uh-SuD"/>
+                <constraint firstItem="suA-DD-eZq" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="138" id="qKX-Wt-78x"/>
+                <constraint firstItem="0AP-uz-i5h" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="100" id="rKV-Uv-nuO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-110" y="89"/>
+        </view>
+    </objects>
+</document>
