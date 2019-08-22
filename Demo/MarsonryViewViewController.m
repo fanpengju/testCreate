@@ -17,9 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+
     
     // master after2.0
-    
+
+    //2.0 2222
+    //2.0
+
     // master 
     // 测试合并分支 2:42
     
